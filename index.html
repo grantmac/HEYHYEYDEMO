@@ -1,7 +1,113 @@
-<main>
-  <p>Ditty</p>
-  <h1>New workspace</h1>
-  <button type="button" id="counter">Count 0</button>
-</main>
-<script type="module" src="/src/app.js"></script>
-<link rel="stylesheet" href="/src/styles.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Superhands Review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <article class="review" aria-label="Superhands review preview">
+        <header class="chrome" aria-label="Browser chrome">
+          <img class="chrome__bar" src="/assets/chrome-bar.svg" alt="" />
+          <img class="chrome__traffic" src="/assets/chrome-traffic.svg" alt="" />
+          <p class="chrome__url">
+            <span class="chrome__url-host">app.superhands.ai</span><span>/c/61b138a4</span>
+          </p>
+        </header>
+
+        <div class="shell">
+          <aside class="sidebar" aria-label="Navigation rail">
+            <button class="sidebar__back" type="button" aria-label="Back">
+              <img src="/assets/icon-back.svg" alt="" />
+            </button>
+            <div class="sidebar__spacer"></div>
+            <div class="sidebar__panel"></div>
+            <div class="sidebar__panel"></div>
+          </aside>
+
+          <div class="workspace">
+            <nav class="tabs" aria-label="Session tabs">
+              <div class="tabs__live">
+                <img src="/assets/icon-live.svg" alt="" />
+                <span>Live</span>
+              </div>
+              <div class="tabs__inspecting" aria-current="page">
+                <img src="/assets/icon-inspecting.svg" alt="" />
+                <span>Inspecting</span>
+                <img class="tabs__underline" src="/assets/tab-underline.svg" alt="" />
+              </div>
+              <div class="tabs__tools">
+                <img src="/assets/icon-tool-1.svg" alt="" />
+                <img src="/assets/icon-tool-2.svg" alt="" />
+                <img src="/assets/icon-tool-3.svg" alt="" />
+                <div class="tabs__pill">
+                  <img src="/assets/icon-tool-4.svg" alt="" />
+                  <img src="/assets/icon-tool-5.svg" alt="" />
+                </div>
+              </div>
+            </nav>
+
+            <main class="canvas">
+              <section class="homes">
+                <h1 class="homes__title">Homes</h1>
+
+                <div class="homes__hero">
+                  <p class="homes__hero-copy">Find your next stay today</p>
+                </div>
+
+                <div class="homes__property">
+                  <img src="/assets/hero.jpg" alt="Property interior" />
+                </div>
+
+                <form class="search-pill" aria-label="Search">
+                  <label class="search-pill__field">
+                    <span class="search-pill__label">Where</span>
+                    <span class="search-pill__value">Search destinations</span>
+                  </label>
+                  <img class="search-pill__divider" src="/assets/divider.svg" alt="" />
+                  <label class="search-pill__field">
+                    <span class="search-pill__label">Check in</span>
+                    <span class="search-pill__value">Add dates</span>
+                  </label>
+                </form>
+
+                <section class="destinations" aria-label="Popular destinations">
+                  <div class="destinations__search">
+                    <img src="/assets/icon-search.svg" alt="" />
+                  </div>
+                  <p class="destinations__heading">Popular destinations</p>
+
+                  <div class="destinations__inspect destinations__inspect--label">
+                    <span class="destinations__badge">16</span>
+                  </div>
+
+                  <ul class="destinations__list">
+                    <li class="destinations__item destinations__item--active">
+                      <span class="destinations__city">San Francisco</span>
+                      <span class="destinations__region">California</span>
+                    </li>
+                    <li class="destinations__item">
+                      <span class="destinations__city">Miami</span>
+                      <span class="destinations__region">Florida</span>
+                    </li>
+                  </ul>
+
+                  <img class="destinations__cursor" src="/assets/cursor.svg" alt="" />
+                </section>
+              </section>
+            </main>
+          </div>
+        </div>
+      </article>
+    </div>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>
